@@ -14,6 +14,8 @@
 		EB88957828FDBCC3004D623A /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88957728FDBCC3004D623A /* Character.swift */; };
 		EB88957A28FDC1E9004D623A /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88957928FDC1E9004D623A /* APIService.swift */; };
 		EB88957C28FDC218004D623A /* ResultError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88957B28FDC218004D623A /* ResultError.swift */; };
+		EB88957E28FDCB18004D623A /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88957D28FDCB18004D623A /* CharacterTableViewCell.swift */; };
+		EB88958028FDCB32004D623A /* CharacterListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88957F28FDCB32004D623A /* CharacterListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		EB88957728FDBCC3004D623A /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		EB88957928FDC1E9004D623A /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		EB88957B28FDC218004D623A /* ResultError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultError.swift; sourceTree = "<group>"; };
+		EB88957D28FDCB18004D623A /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
+		EB88957F28FDCB32004D623A /* CharacterListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 		EB88955F28FDB6FA004D623A /* RickAndMortyMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				EB88957D28FDCB18004D623A /* CharacterTableViewCell.swift */,
+				EB88957F28FDCB32004D623A /* CharacterListTableViewController.swift */,
 				EB88957628FDB7CD004D623A /* Models */,
 				EB88957428FDB795004D623A /* Storyboards */,
 				EB88957528FDB7AA004D623A /* Resources */,
@@ -167,8 +173,10 @@
 				EB88957828FDBCC3004D623A /* Character.swift in Sources */,
 				EB88957C28FDC218004D623A /* ResultError.swift in Sources */,
 				EB88956128FDB6FA004D623A /* AppDelegate.swift in Sources */,
+				EB88958028FDCB32004D623A /* CharacterListTableViewController.swift in Sources */,
 				EB88957A28FDC1E9004D623A /* APIService.swift in Sources */,
 				EB88956328FDB6FA004D623A /* SceneDelegate.swift in Sources */,
+				EB88957E28FDCB18004D623A /* CharacterTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,7 +5,7 @@
 //  Created by Esther on 10/17/22.
 //
 
-import Foundation
+import UIKit
 
 ///Network Service for our Fetch Call
 
@@ -59,4 +59,27 @@ struct APIService {
             
         }.resume()
     }
+    ///These are both network calls, so there is redundancy. The only thing different is the URL passing in
+    //Import UIKit rather than foundation at top of this file in order to get image
+    static func fetchImage(for image: String, completion: @escaping (Result<UIImage, ResultError>) -> Void) {
+        guard let imageURL = URL(string: image) else { return }
+        URLSession.shared.dataTask(with: imageURL) { dTaskData, _, error in
+            if let error {
+                completion(.failure(.requestError(error)))
+            }
+            // Check for data
+            guard let data = dTaskData else {
+                completion(.failure(.noData))
+                return
+            }
+            guard let image = UIImage(data: data) else {
+                completion(.failure(.errorDecoding))
+                return
+            }
+            completion(.success(image))
+            
+        }.resume()
+        
+    }
+    
 } // End of Struct
