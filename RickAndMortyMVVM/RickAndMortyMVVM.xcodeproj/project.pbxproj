@@ -16,6 +16,7 @@
 		EB88957C28FDC218004D623A /* ResultError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88957B28FDC218004D623A /* ResultError.swift */; };
 		EB88957E28FDCB18004D623A /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88957D28FDCB18004D623A /* CharacterTableViewCell.swift */; };
 		EB88958028FDCB32004D623A /* CharacterListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88957F28FDCB32004D623A /* CharacterListTableViewController.swift */; };
+		EBA558C528FDDB3700E632F7 /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA558C428FDDB3700E632F7 /* CharacterListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		EB88957B28FDC218004D623A /* ResultError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultError.swift; sourceTree = "<group>"; };
 		EB88957D28FDCB18004D623A /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 		EB88957F28FDCB32004D623A /* CharacterListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListTableViewController.swift; sourceTree = "<group>"; };
+		EBA558C428FDDB3700E632F7 /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +64,11 @@
 		EB88955F28FDB6FA004D623A /* RickAndMortyMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				EB88957D28FDCB18004D623A /* CharacterTableViewCell.swift */,
-				EB88957F28FDCB32004D623A /* CharacterListTableViewController.swift */,
 				EB88957628FDB7CD004D623A /* Models */,
+				EBA558C328FDDAC900E632F7 /* Character List */,
+				EBA558C628FDE2A800E632F7 /* Networking */,
 				EB88957428FDB795004D623A /* Storyboards */,
 				EB88957528FDB7AA004D623A /* Resources */,
-				EB88957928FDC1E9004D623A /* APIService.swift */,
-				EB88957B28FDC218004D623A /* ResultError.swift */,
 			);
 			path = RickAndMortyMVVM;
 			sourceTree = "<group>";
@@ -98,6 +98,25 @@
 				EB88957728FDBCC3004D623A /* Character.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		EBA558C328FDDAC900E632F7 /* Character List */ = {
+			isa = PBXGroup;
+			children = (
+				EB88957D28FDCB18004D623A /* CharacterTableViewCell.swift */,
+				EB88957F28FDCB32004D623A /* CharacterListTableViewController.swift */,
+				EBA558C428FDDB3700E632F7 /* CharacterListViewModel.swift */,
+			);
+			path = "Character List";
+			sourceTree = "<group>";
+		};
+		EBA558C628FDE2A800E632F7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				EB88957928FDC1E9004D623A /* APIService.swift */,
+				EB88957B28FDC218004D623A /* ResultError.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +193,7 @@
 				EB88957C28FDC218004D623A /* ResultError.swift in Sources */,
 				EB88956128FDB6FA004D623A /* AppDelegate.swift in Sources */,
 				EB88958028FDCB32004D623A /* CharacterListTableViewController.swift in Sources */,
+				EBA558C528FDDB3700E632F7 /* CharacterListViewModel.swift in Sources */,
 				EB88957A28FDC1E9004D623A /* APIService.swift in Sources */,
 				EB88956328FDB6FA004D623A /* SceneDelegate.swift in Sources */,
 				EB88957E28FDCB18004D623A /* CharacterTableViewCell.swift in Sources */,

@@ -27,8 +27,10 @@ class CharacterTableViewCell: UITableViewCell {
             case .failure(let error):
                 print(error)
             case .success(let image):
-                /// self because we are within a closure
-                self.characterImageImageView.image = image
+                /// self because we are within a closure. Also put it on main thread.
+                DispatchQueue.main.async {
+                    self.characterImageImageView.image = image
+                }
             }
         }
     }

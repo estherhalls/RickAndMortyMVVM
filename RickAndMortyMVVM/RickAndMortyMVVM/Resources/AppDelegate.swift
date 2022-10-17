@@ -12,24 +12,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        APIService.fetchCharacters(with: "Rick") { result in
-            /// must switch because result required a result and an error
-            switch result {
-            case .failure(let error):
-                print(error.errorDescription)
-                
-            case .success(let tld):
-                ///for in loop because we are trying to access each item in character array within TLD results key
-                for character in tld.results {
-                    print(character.name)
-                }
-                
-            }
-        }
-        return true
-    }
+//    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+//        // Override point for customization after application launch.
+//        APIService.fetchCharacters(with: "Rick") { result in
+//            /// must switch because result required a result and an error
+//            switch result {
+//            case .failure(let error):
+//                print(error.errorDescription)
+//
+//            case .success(let tld):
+//                ///for in loop because we are trying to access each item in character array within TLD results key
+//                for character in tld.results {
+//                    print(character.name)
+//                }
+//
+//            }
+//        }
+//        return true
+//    }
 
     // MARK: UISceneSession Lifecycle
 
