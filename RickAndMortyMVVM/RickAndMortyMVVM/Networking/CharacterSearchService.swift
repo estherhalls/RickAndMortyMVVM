@@ -10,14 +10,21 @@ struct CharacterSearchService {
     
     // Give directed access to APIService without making it static and available to all files on APIService file
     private let apiService = APIService()
-    func fetchCharacterList(for endpoint: ,completionHandler: @escaping (Result<TopLevelDictionary, ResultError>) -> Void) {
-        aPIService.perform(<#T##request: URLRequest##URLRequest#>) { result in
+    func fetchCharacterList(for endpoint: RMFilterEndpoint ,completionHandler: @escaping (Result<TopLevelDictionary, ResultError>) -> Void) {
+        
+        guard let finalURL = endpoint.fullURL else {
+            completionHandler(.failure(.badURL))
+            return
+        }
+        let urlRequest = URLRequest(url: finalURL)
+        
+        apiService.perform(urlRequest) { result in
             switch result {
             case.failure(let error):
                 completionHandler(.failure(.requestError(error)))
             case.success(let data):
                 do {
-                    let tld = JSONDecoder().decode(TopLevelDictionary.self, from: data)
+                    let tld = try JSONDecoder().decode(TopLevelDictionary.self, from: data)
                     completionHandler(.success(tld))
                 } catch {
                     completionHandler(.failure(.errorDecoding))

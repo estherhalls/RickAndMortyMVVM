@@ -21,17 +21,6 @@ class CharacterTableViewCell: UITableViewCell {
         fetchImage(for: character)
     }
     func fetchImage(for character: Character) {
-        APIService.fetchImage(for: character.imageString) { result in
-            /// Switch because result required result or error
-            switch result {
-            case .failure(let error):
-                print(error)
-            case .success(let image):
-                /// self because we are within a closure. Also put it on main thread.
-                DispatchQueue.main.async {
-                    self.characterImageImageView.image = image
-                }
-            }
-        }
+   
     }
 }
