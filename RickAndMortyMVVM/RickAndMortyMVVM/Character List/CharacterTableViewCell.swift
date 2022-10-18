@@ -14,6 +14,8 @@ class CharacterTableViewCell: UITableViewCell {
     @IBOutlet weak var characterImageImageView: UIImageView!
     @IBOutlet weak var characterNameLabel: UILabel!
     
+    private let apiService = APIService()
+    
     // Call this method in the table view controller when building UI of the cell
     func configureCell(with character: Character) {
         characterNameLabel.text = character.name
@@ -21,6 +23,18 @@ class CharacterTableViewCell: UITableViewCell {
         fetchImage(for: character)
     }
     func fetchImage(for character: Character) {
-   
+        guard let imageURL = URL(string: character.imageString) else {return}
+        let request = URLRequest(url: imageURL)
+        apiService.perform(request) { result in
+            switch result {
+            case .failure(let error):
+                print(error.errorDescription)
+            case .success(let data):
+                let image = UIImage(data: data)
+                DispatchQueue.main.async {
+                    self.characterImageImageView.image = image
+                }
+            }
+        }
     }
 }
