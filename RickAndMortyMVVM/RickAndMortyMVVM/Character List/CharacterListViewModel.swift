@@ -17,6 +17,7 @@ class CharacterListViewModel {
     weak var delegate: CharacterListViewModelDelegate?
     
     // Dependency Injection from view model to this view controller because this view should not exist without its view model. The act of injecting the dependency into the INITIALIZATION of this object.
+    
     init(delegate: CharacterListViewModelDelegate) {
         self.delegate = delegate
     }

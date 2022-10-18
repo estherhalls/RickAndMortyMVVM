@@ -17,6 +17,8 @@
 		EB88957E28FDCB18004D623A /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88957D28FDCB18004D623A /* CharacterTableViewCell.swift */; };
 		EB88958028FDCB32004D623A /* CharacterListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB88957F28FDCB32004D623A /* CharacterListTableViewController.swift */; };
 		EBA558C528FDDB3700E632F7 /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA558C428FDDB3700E632F7 /* CharacterListViewModel.swift */; };
+		EBA5590128FF09A200E632F7 /* CharacterSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA5590028FF09A200E632F7 /* CharacterSearchService.swift */; };
+		EBA5590328FF111B00E632F7 /* RMEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA5590228FF111B00E632F7 /* RMEndpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		EB88957D28FDCB18004D623A /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
 		EB88957F28FDCB32004D623A /* CharacterListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListTableViewController.swift; sourceTree = "<group>"; };
 		EBA558C428FDDB3700E632F7 /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
+		EBA5590028FF09A200E632F7 /* CharacterSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchService.swift; sourceTree = "<group>"; };
+		EBA5590228FF111B00E632F7 /* RMEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEndpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 			children = (
 				EB88957928FDC1E9004D623A /* APIService.swift */,
 				EB88957B28FDC218004D623A /* ResultError.swift */,
+				EBA5590028FF09A200E632F7 /* CharacterSearchService.swift */,
+				EBA5590228FF111B00E632F7 /* RMEndpoint.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -196,6 +202,8 @@
 				EBA558C528FDDB3700E632F7 /* CharacterListViewModel.swift in Sources */,
 				EB88957A28FDC1E9004D623A /* APIService.swift in Sources */,
 				EB88956328FDB6FA004D623A /* SceneDelegate.swift in Sources */,
+				EBA5590328FF111B00E632F7 /* RMEndpoint.swift in Sources */,
+				EBA5590128FF09A200E632F7 /* CharacterSearchService.swift in Sources */,
 				EB88957E28FDCB18004D623A /* CharacterTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
