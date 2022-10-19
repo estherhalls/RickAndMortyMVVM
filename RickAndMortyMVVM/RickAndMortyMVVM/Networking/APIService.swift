@@ -6,11 +6,8 @@
 //
 
 import UIKit
-
 ///Network Service for our Fetch Call
-
 struct APIService {
-    
     // Very generic network call. Could be copy and pasted in any project and it would work
      func perform(_ request: URLRequest, completion: @escaping (Result<Data, ResultError>) -> Void) {
         // Data Task

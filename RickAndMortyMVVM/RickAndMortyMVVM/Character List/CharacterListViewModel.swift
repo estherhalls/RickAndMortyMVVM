@@ -6,7 +6,6 @@
 //
 
 import Foundation
-
 protocol CharacterListViewModelDelegate: AnyObject {
     func updateViews()
 }

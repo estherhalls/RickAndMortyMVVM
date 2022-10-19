@@ -20,6 +20,7 @@
 		EBA5590128FF09A200E632F7 /* CharacterSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA5590028FF09A200E632F7 /* CharacterSearchService.swift */; };
 		EBA5590328FF111B00E632F7 /* RMEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA5590228FF111B00E632F7 /* RMEndpoint.swift */; };
 		EBEA7B2829005A7100F6123F /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEA7B2729005A7100F6123F /* CharacterDetailViewController.swift */; };
+		EBEA7B2D29006B2500F6123F /* ServiceRequestingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEA7B2C29006B2500F6123F /* ServiceRequestingImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		EBA5590028FF09A200E632F7 /* CharacterSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchService.swift; sourceTree = "<group>"; };
 		EBA5590228FF111B00E632F7 /* RMEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEndpoint.swift; sourceTree = "<group>"; };
 		EBEA7B2729005A7100F6123F /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
+		EBEA7B2C29006B2500F6123F /* ServiceRequestingImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRequestingImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				EB88957628FDB7CD004D623A /* Models */,
+				EBEA7B2929005CD900F6123F /* Character Detail */,
 				EBA558C328FDDAC900E632F7 /* Character List */,
 				EBA558C628FDE2A800E632F7 /* Networking */,
 				EB88957428FDB795004D623A /* Storyboards */,
@@ -112,7 +115,7 @@
 				EB88957D28FDCB18004D623A /* CharacterTableViewCell.swift */,
 				EB88957F28FDCB32004D623A /* CharacterListTableViewController.swift */,
 				EBA558C428FDDB3700E632F7 /* CharacterListViewModel.swift */,
-				EBEA7B2929005CD900F6123F /* Character Detail */,
+				EBEA7B2C29006B2500F6123F /* ServiceRequestingImageView.swift */,
 			);
 			path = "Character List";
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				EB88956328FDB6FA004D623A /* SceneDelegate.swift in Sources */,
 				EBA5590328FF111B00E632F7 /* RMEndpoint.swift in Sources */,
 				EBA5590128FF09A200E632F7 /* CharacterSearchService.swift in Sources */,
+				EBEA7B2D29006B2500F6123F /* ServiceRequestingImageView.swift in Sources */,
 				EB88957E28FDCB18004D623A /* CharacterTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

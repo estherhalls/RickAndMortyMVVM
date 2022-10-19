@@ -6,7 +6,6 @@
 //
 
 import UIKit
-
 class CharacterDetailViewController: UIViewController {
     @IBOutlet weak var characterIDLabel: UILabel!
     @IBOutlet weak var characterNameLabel: UILabel!
@@ -36,7 +35,6 @@ class CharacterDetailViewController: UIViewController {
         characterSpeciesLabel.text = character.species
         characterOriginLabel.text = "Origin: \(character.origin.name)"
         characterGenderLabel.text = character.gender
-        
     }
     
 } // End of Class
