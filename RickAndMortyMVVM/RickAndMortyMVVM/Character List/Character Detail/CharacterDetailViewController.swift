@@ -21,10 +21,14 @@ class CharacterDetailViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    func configure(with character: Character) {
+    func configure(with character: Character, and image: UIImage?) {
         /// Solve race condition from segue competing with view in memory
         loadViewIfNeeded()
         
+        // Doing if let because if it can't find an image, I still want it to run the rest of the code to retrieve data for other labels
+        if let image{
+            characterImageImageView.image = image
+        }
         characterIDLabel.text = "ID no. \(character.id)"
         characterNameLabel.text = character.name
         characterStatusLabel.text = " Status: \(character.status)"

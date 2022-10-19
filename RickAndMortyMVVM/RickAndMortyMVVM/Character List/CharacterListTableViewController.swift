@@ -41,9 +41,12 @@ class CharacterListTableViewController: UITableViewController {
          //IIDOO
          guard segue.identifier == "toDetailVC",
                let indexPath = tableView.indexPathForSelectedRow,
-               let destination = segue.destination as? CharacterDetailViewController else { return }
+               let destination = segue.destination as? CharacterDetailViewController,
+               let cell = sender as? CharacterTableViewCell
+         else { return }
+         let image = cell.characterImageImageView.image
          let character = viewModel.characters[indexPath.row]
-         destination.configure(with: character)
+         destination.configure(with: character, and: image)
      }
      
 } // End of Class
