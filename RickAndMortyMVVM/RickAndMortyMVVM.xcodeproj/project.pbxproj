@@ -112,7 +112,7 @@
 				EB88957D28FDCB18004D623A /* CharacterTableViewCell.swift */,
 				EB88957F28FDCB32004D623A /* CharacterListTableViewController.swift */,
 				EBA558C428FDDB3700E632F7 /* CharacterListViewModel.swift */,
-				EBEA7B2729005A7100F6123F /* CharacterDetailViewController.swift */,
+				EBEA7B2929005CD900F6123F /* Character Detail */,
 			);
 			path = "Character List";
 			sourceTree = "<group>";
@@ -126,6 +126,14 @@
 				EBA5590228FF111B00E632F7 /* RMEndpoint.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		EBEA7B2929005CD900F6123F /* Character Detail */ = {
+			isa = PBXGroup;
+			children = (
+				EBEA7B2729005A7100F6123F /* CharacterDetailViewController.swift */,
+			);
+			path = "Character Detail";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

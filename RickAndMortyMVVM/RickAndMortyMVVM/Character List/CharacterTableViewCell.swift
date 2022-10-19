@@ -39,7 +39,7 @@ class CharacterTableViewCell: UITableViewCell {
             case .success(let data):
                 let image = UIImage(data: data)
                 DispatchQueue.main.async {
-                    self.characterImageImageView.image = image
+                    self?.characterImageImageView.image = image
                 }
             }
         }

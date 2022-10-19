@@ -21,13 +21,10 @@ class CharacterListTableViewController: UITableViewController {
     }
     
     // MARK: - Table view data source
-    
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return viewModel.characters.count
     }
-    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "characterCell", for: indexPath) as? CharacterTableViewCell else {return UITableViewCell()}
@@ -37,17 +34,18 @@ class CharacterListTableViewController: UITableViewController {
         return cell
     }
     
-    
-    /*
      // MARK: - Navigation
      
      // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
+         //IIDOO
+         guard segue.identifier == "toDetailVC",
+               let indexPath = tableView.indexPathForSelectedRow,
+               let destination = segue.destination as? CharacterDetailViewController else { return }
+         let character = viewModel.characters[indexPath.row]
+         destination.configure(with: character)
      }
-     */
-    
+     
 } // End of Class
 
 extension CharacterListTableViewController: CharacterListViewModelDelegate {

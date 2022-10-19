@@ -28,9 +28,9 @@ class CharacterListViewModel {
             case .failure(let error):
                 print(error.errorDescription)
             case .success(let tld):
-                self.characters = tld.results
+                self?.characters = tld.results
                 DispatchQueue.main.async {
-                    self.delegate?.updateViews()
+                    self?.delegate?.updateViews()
                 }
             }
         }
