@@ -19,6 +19,7 @@
 		EBA558C528FDDB3700E632F7 /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA558C428FDDB3700E632F7 /* CharacterListViewModel.swift */; };
 		EBA5590128FF09A200E632F7 /* CharacterSearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA5590028FF09A200E632F7 /* CharacterSearchService.swift */; };
 		EBA5590328FF111B00E632F7 /* RMEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA5590228FF111B00E632F7 /* RMEndpoint.swift */; };
+		EBEA7B2829005A7100F6123F /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEA7B2729005A7100F6123F /* CharacterDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		EBA558C428FDDB3700E632F7 /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
 		EBA5590028FF09A200E632F7 /* CharacterSearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSearchService.swift; sourceTree = "<group>"; };
 		EBA5590228FF111B00E632F7 /* RMEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMEndpoint.swift; sourceTree = "<group>"; };
+		EBEA7B2729005A7100F6123F /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				EB88957D28FDCB18004D623A /* CharacterTableViewCell.swift */,
 				EB88957F28FDCB32004D623A /* CharacterListTableViewController.swift */,
 				EBA558C428FDDB3700E632F7 /* CharacterListViewModel.swift */,
+				EBEA7B2729005A7100F6123F /* CharacterDetailViewController.swift */,
 			);
 			path = "Character List";
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBEA7B2829005A7100F6123F /* CharacterDetailViewController.swift in Sources */,
 				EB88957828FDBCC3004D623A /* Character.swift in Sources */,
 				EB88957C28FDC218004D623A /* ResultError.swift in Sources */,
 				EB88956128FDB6FA004D623A /* AppDelegate.swift in Sources */,
