@@ -21,11 +21,18 @@ class CharacterTableViewCell: UITableViewCell {
         characterNameLabel.text = character.name
         // fetch image from APIService file
         fetchImage(for: character)
+        makeRounded()
     }
+    
+    func makeRounded() {
+        characterImageImageView.layer.cornerRadius = characterImageImageView.frame.size.width / 2
+        characterImageImageView.clipsToBounds = true
+    }
+    
     func fetchImage(for character: Character) {
         guard let imageURL = URL(string: character.imageString) else {return}
         let request = URLRequest(url: imageURL)
-        apiService.perform(request) { result in
+        apiService.perform(request) { [weak self] result in
             switch result {
             case .failure(let error):
                 print(error.errorDescription)

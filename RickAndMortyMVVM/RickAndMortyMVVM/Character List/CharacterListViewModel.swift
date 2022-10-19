@@ -23,7 +23,7 @@ class CharacterListViewModel {
     }
     
     func fetchCharacters(with name: String) {
-        service.fetchCharacterList(for: .name(name)) { result in
+        service.fetchCharacterList(for: .name(name)) { [weak self] result in
             switch result {
             case .failure(let error):
                 print(error.errorDescription)
