@@ -6,6 +6,7 @@
 //
 
 import UIKit
+
 class CharacterListTableViewController: UITableViewController {
     
     // MARK: - Outlets

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 /// For every nested dictionary, we need a new struct
 struct TopLevelDictionary: Decodable {
     let info: Info

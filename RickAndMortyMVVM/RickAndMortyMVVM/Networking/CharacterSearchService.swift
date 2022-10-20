@@ -6,10 +6,13 @@
 //
 
 import Foundation
+
 struct CharacterSearchService {
     
     // Give directed access to APIService without making it static and available to all files on APIService file
+    // This is a concrete type (of struct or class) because it is initializing a whole-ass instance of this APIService structure
     private let apiService = APIService()
+    
     func fetchCharacterList(for endpoint: RMFilterEndpoint ,completionHandler: @escaping (Result<TopLevelDictionary, ResultError>) -> Void) {
         
         guard let finalURL = endpoint.fullURL else {

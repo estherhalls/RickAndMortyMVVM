@@ -6,6 +6,8 @@
 //
 
 import UIKit
+
+/// Async Image View
 class ServiceRequestingImageView: UIImageView {
 
     private let service = APIService()

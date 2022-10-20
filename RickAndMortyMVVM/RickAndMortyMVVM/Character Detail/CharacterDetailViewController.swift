@@ -6,6 +6,7 @@
 //
 
 import UIKit
+
 class CharacterDetailViewController: UIViewController {
     @IBOutlet weak var characterIDLabel: UILabel!
     @IBOutlet weak var characterNameLabel: UILabel!

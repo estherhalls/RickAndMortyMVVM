@@ -6,6 +6,7 @@
 //
 
 import UIKit
+
 class CharacterTableViewCell: UITableViewCell {
 
   // MARK: - Outlets

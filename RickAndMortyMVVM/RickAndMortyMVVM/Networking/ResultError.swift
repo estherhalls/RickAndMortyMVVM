@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 enum ResultError: LocalizedError {
     case requestError(Error)
     case badURL

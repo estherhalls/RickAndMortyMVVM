@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 /// Abstract the creation of our URLs to allow us to use any enpoint we want using one inclusive/interchangable function rather than a full function for each endpoint
 /// Use enum because it allows cases
 enum RMFilterEndpoint {
